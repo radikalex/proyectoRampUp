@@ -1,0 +1,152 @@
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-texto {
+    width: 70%;
+    margin-top: 3%;
+
+    flex: 1;
+}
+
+.contenedor-texto p {
+    font-size: 18px;
+    margin: 15px;
+}
+
+p {
+    margin: 10px auto;
+}
+
+h1.mis-trabajos {
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 30px;
+}
+
+.contenedor-trabajos {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    flex: 2.5;
+}
+
+video {
+    width: 100%;
+}
+
+.tarjeta {
+    width: 30%;
+    margin: 15px 1.66%;
+    border: 5px inset #000000;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 0 rgb(43 10 61 / 20%);
+}
+
+.tarjeta-titulo {
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+}
+
+.tarjeta-multimedia {
+    width: 100.5%;
+}
+
+.tarjeta-descripcion {
+    font-size: 16px;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.tarjeta-descripcion a {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.boton-desplegar {
+    width: 20%;
+    margin-left: 40%;
+    align-self: center;
+}
+
+@media screen and (max-width: 1400px) {
+    .tarjeta {
+        width: 45%;
+        margin: 15px 2.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    h1.mis-trabajos {
+        font-size: 55px;
+        padding-bottom: 20px;
+    }
+
+    .contenedor-texto p {
+        font-size: 16px;
+    }
+
+    .tarjeta-titulo {
+        font-size: 22px;
+    }
+
+    .tarjeta-descripcion {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+
+    .contenedor-texto {
+        margin-top: 6%;
+    }
+
+    .contenedor-trabajos {
+        margin-bottom: 10%;
+    }
+
+    .tarjeta {
+        width: 90%;
+        margin: 15px 5%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    .contenedor-texto {
+        margin-top: 8%;
+    }
+
+    h1.mis-trabajos {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-texto p {
+        font-size: 14px;
+    }
+
+    .tarjeta-titulo {
+        font-size: 18px;
+    }
+
+    .tarjeta-descripcion {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles-portfolio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">Bienvenida</a>
+            <a href="../biografia/biografia.html">Biografía</a>
+            <a class="pag-activa">Portfolio</a>
+            <a href="../contacto/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contenedor-texto">
+            <h1 class="mis-trabajos">Mis trabajos</h1>
+            <p>
+                Aquí puedes ver algunos de mis trabajos destacados. Durante mis estudios he desarrollado distintos proyectos de ámbitos diferentes como 
+                videojuegos, animación, simulación, desarrollo web, realidad aumentada o realidad virtual entre otros. Eso se ve reflejado en la variedad 
+                de los proyectos que se muestran abajo.
+            </p>
+            <p>
+                Si te gusta lo que ves en alguno de mis proyectos no dudes en usar la flecha para abrir el desplegable y leer más sobre cada proyecto. 
+                Incluso puedes clicar en "Leer más..." para llevarte a la página donde se específica y se explica más en detalle cada proyecto.
+            </p>
+        </div>
+
+        <div class="contenedor-trabajos">
+
+            <!-- Ninja Tale -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Videojuego: A Ninja Tale</h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/ninja-tale.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Videojuego hecho en Unity que sigue la dinámica de los juego roguelike (o juegos de mazmorras) como <i>The binding of Isaac</i>. En este
+                        juego se generan distintas mazmorras cada vez que se juega por lo que cada partida es distinta.
+                    </p>
+                    <p>
+                        El videojuego narra la historia de un ninja al cuál su maestro le otorga la misión de salvar una aldea subyugada por un samurái
+                        que está haciendo imposible la supervivencia en la aldea a través de su régimen autoritario. Nuestro protagonista deberá llegar
+                        a lo alto del castillo y derrotar al samurái, para ello deberá superar un ardúo camino derrotando a los numerosos guardias que hay.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- Heroes Comic -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Página Web: Héroes Cómic</h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/heroes-web.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Sencilla página web hecha con Angular en la que se usa JSON server para manejar los datos de los héroes y de los usuarios que
+                        tienen permitido modificarlos.
+                    </p>
+                    <p>
+                        La web consta de un listado de héroes que pueden ser modificados pudiendose incluir nuevos héroes, eliminar héroes o modificar
+                        héroes ya presentes en el listado. Para añadir héroes se utilizó un formulario reactivo que tiene diversas validaciones.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- Mario bros -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Animación: Super Mario Bros </h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/mario-anim.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Animación hecha con Blender que trata de emular al conocido videojuego Super Mario Bros y un breve nivel de este.
+                    </p>
+                    <p>
+                        Para realizar la animación se usaron distintos métodos como interpolaciones o <i>motion capture</i> con un fin didáctico
+                        de practicar cómo de útiles podían ser estas a la hora de crear una simulación.
+                    </p>
+                    <p>
+                        La animación consta de un modelo 3D de Super Mario al que hubo que crearle un <i>rigging</i>, una cámara con una interpolación
+                        constante, efectos de movimiento usando el algoritmo de Catmull y la utilización de keyframes para lograr el cambio de material
+                        en la textura de Mario al coger la flor de fuego.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- Ropa PBD -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Simulación: Ropa PBD </h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/sim-pbd.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Breve proyecto para practicar con modelos basados en posiciones (PBD) y distintas configuraciones para observar su comportamiento.
+                    </p>
+                    <p>
+                        El proyecto se realizó en Java haciendo uso del programa "Processing". En el vídeo se puede ver el resultado de distintas configuraciones
+                        y para que de mayor impresión se le otorgó al amterial distintas materiales como un camiseta de baloncesto o metal para así dar mayor
+                        impresión de realidad.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- Reddit -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Página Web: Reddit </h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/web-reddit.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Vale, sí. Me has pillado. Esto realmente ni lo hice yo ni contribuí a hacerlo, está aquí para hacer de bulto.
+                    </p>
+                    <p>
+                        Sinceramente era una buena oportunidad para introducirte en el mundo de reddit, no me lo tengas en cuenta. En el vídeo se ve
+                        el subreddit de '/r/ProgrammerHumor', el cuál recomiendo altamente para memes relacionados con la programación. Ya me lo agradecerás
+                        más tarde.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- SPH -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Simulación: Líquidos SPH</h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/sim-sph.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Simulación de fluidos con el algoritmo SPH. Su implementación fue hecha con Python. Para la visualización de los resultados 
+                        se hizó una breve escena de Blender.
+                    </p>
+                    <p>
+                        En cada ciclo del algoritmo de SPH se le otorga a cada partícula la posición obtenida de aplicar el algoritmo y una vez obtenidos
+                        todos los keyframes se obtiene una animación. Además se aplicó el algoritmo con distintas configuraciones para mostrar visualmente
+                        como estas afectaban.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- GTA -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Juego: Gta V </h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/juego-gta.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Jajajajajajajaja
+                    </p>
+                    <p>
+                        Este cuela menos que el de reddit, ¿verdad? Mea culpa, quería poner un par inventadas para rellenar un poco. ¿Te imaginas haber 
+                        trabajado para Rockstar?
+                    </p>
+                    <p> No creo que GTA V necesite promoción, pero bueno es loq ue se me ocurria porque hace unos dias se filtro gameplay de GTA VI.</p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+
+            <!-- Path Finding -->
+            <div class="tarjeta">
+                <div class="tarjeta-titulo">
+                    <h5> Simulación: Path Finding </h5>
+                </div>
+                <div class="tarjeta-multimedia">
+                    <video controls>
+                        <source src="../../assets/videos/sim-pa.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="tarjeta-descripcion">
+                    <p>
+                        Simulación hecha con Java en el programa 'Procesing'. En este caso de Path Finding se usó el conocido algoritmo de A*.
+                    </p>
+                    <p>
+                        Este proyecto consta de un mapa de celdas blancas en las que se puede especificar una en concreto como inicio (celda verde) y otra 
+                        como final (celda roja). Adicionalmente se pueden colocar celdas por las que no se puede ir clicando en ellas. Por lo que solo se 
+                        puede pasar por celdas blancas para ir desde la celda verde a la roja.
+                    </p>
+                    <p>
+                        La aplicación de A* en esto logra encontrar el camino más corto en un tiempo altamente eficiente. Esto se puede ver en el vídeo con 
+                        las distintas pruebas que se hicieron para poner a prueba como actuaba el algoritmo.
+                    </p>
+                    <a href="#">Leer más...</a>
+                </div>
+                <input type="image" class="boton-desplegar" src="../../assets/images/flecha_desplegable_abajo.png" onclick="desplegarOnOff(this)"/>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="contenedor-copyright">
+            <span class="copyright">Todos los derechos reservados por Alex Jimenez.</span><span class="copyright"> Copyright © 2022</span>
+        </div>
+        <div class="contenedor-logos">
+            <img src="../../assets/images/twitter-logo.svg" alt="Twitter logo" class="logo">
+            <img src="../../assets/images/instagram-logo.jpg" alt="Instagram logo" class="logo">
+            <img src="../../assets/images/linkedIn-logo.svg" alt="LinkedIn logo" class="logo">
+            <img src="../../assets/images/youtube-logo.svg" alt="Youtube logo" class="logo">
+            <img src="../../assets/images/github-logo.png" alt="Github logo" class="logo">
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script>
+
+        function desplegarOnOff(boton) {
+            var content = boton.previousElementSibling;
+
+            if (content.style.maxHeight) {
+              boton.src = "../../assets/images/flecha_desplegable_abajo.png";
+              content.style.maxHeight = null;
+              // Timeout para esperar la animación
+              setTimeout(() => { 
+                content.style.padding = null;
+              }, 420);
+            } else {
+              boton.src = "../../assets/images/flecha_desplegable_arriba.png";
+              content.style.padding = 20 + "px";
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+
+    </script>
+</body>
+</html>
