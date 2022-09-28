@@ -4,9 +4,27 @@
     padding: 0;
 }
 
+:root {
+    --altura-header: 80px;
+    --altura-footer: 45px;
+}
+
+html, body {
+    height: 100%;
+    color:white;
+}
+
+main {
+    min-height: calc(100% - (var(--altura-header) + var(--altura-footer)));
+    background-image: url('./assets/images/fondo2.jpg');
+    background-repeat: cover;
+    /* background-color: #15202B; */
+    /* background-color: #111111; */
+}
+
 header {
     background-color:  rgb(87, 87, 84);
-    height: 80px;
+    height: var(--altura-header);
     display: flex;
     position: sticky;
     font-size: 25px;
@@ -47,13 +65,13 @@ nav a:hover {
 }
 
 .copyright {
-    color: grey;
+    color: white;
     text-align: center;
 }
 
 footer {
-    height: 45px;
-    background-color: #F3F3F3;
+    height: var(--altura-footer);
+    background-color: #8f8c8c;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -74,9 +92,12 @@ footer {
 
 @media screen and (max-width: 1000px) {
 
+    :root {
+        --altura-header: 65px;
+    }
+
     header {
         font-size: 22px;
-        height: 65px;
     }
 
     nav {
@@ -86,9 +107,9 @@ footer {
 }
 
 @media screen and (max-width: 650px) {
-    footer {
-        display: flex;
-        flex-direction: column;
+    
+    :root {
+        --altura-header: 50px;
     }
 
     .copyright {
@@ -109,7 +130,11 @@ footer {
 
     header {
         font-size: 16px;
-        height: 50px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
     }
 
     nav {
@@ -120,12 +145,12 @@ footer {
 
 @media screen and (max-width: 350px) {
 
+    :root {
+        --altura-footer: 55px;
+    }
+
     header {
         font-size: 14px;
-    }
-    
-    footer {
-        height: 55px;
     }
 
     .contenedor-copyright {
