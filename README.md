@@ -13,5 +13,20 @@ El próposito del proyecto era afianzar los conocimientos obtenidos durante esta
 >La página web ha sido creada usando HTML, CSS y JavaScript.
 
 #### Vista previa 
+Vista Bienvenida:
+
+![foto](assets/images/preview_bienvenida.png) 
+
+Vista Biografía:
+
+![foto](assets/images/preview_biografia.png) 
+
+Vista Portfolio:
+
+![foto](assets/images/preview_portfolio.gif) 
+
+Vista Contacto:
+
+![foto](assets/images/preview_contacto.gif) 
 
 Hecho por [Alex Jimenez](https://github.com/radikalex) 🤗

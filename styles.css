@@ -21,7 +21,7 @@ html,
 body {
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #FFFFF7;
 }
 
 main {
@@ -95,7 +95,6 @@ nav a:hover::after {
 }
 
 .copyright {
-  color: white;
   font-size: 14px;
   text-align: center;
 }
