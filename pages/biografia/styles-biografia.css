@@ -28,6 +28,7 @@ img.biografia {
     width: 350px;
     margin: 20px 20px 10px 0;
     float: left;
+    box-shadow: 0 0 5px 5px white;
 }
 
 .contenedor-texto {

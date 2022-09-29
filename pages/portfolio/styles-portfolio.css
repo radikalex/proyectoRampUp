@@ -58,6 +58,7 @@ video {
     padding: 10px;
     font-size: 32px;
     font-weight: bold;
+    text-shadow: 0px 8px 5px black;
 }
 
 .tarjeta-multimedia {
@@ -148,7 +149,7 @@ video {
     }
 
     h1.mis-trabajos {
-        font-size: 40px;
+        font-size: 35px;
         padding-bottom: 10px;
     }
 
