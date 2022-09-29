@@ -1,11 +1,14 @@
 main {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .img-inicial {
-    width: 100%;
+    width: 70%;
     height: 50%;
+    position: absolute;
+    top: 0;
 }
 
 .contenedor-central {
@@ -17,9 +20,7 @@ main {
 
 .contenedor-bienvenida {
     background-color: #8f8c8c;
-    width: 50%;
-    position: absolute;
-    top: 30%;
+    width: 70%;
     padding: 30px 100px;
     z-index: 99;
 }
@@ -34,4 +35,81 @@ main {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    /* .contenedor-bienvenida p {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    } 
+
+    .contenedor-bienvenida {
+        width: 55%;
+        position: absolute;
+        top: 25%;
+        padding: 30px 80px;
+        z-index: 99;
+    } */
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* .contenedor-bienvenida {
+        width: 60%;
+        position: absolute;
+        top: 20%;
+        padding: 30px 70px;
+        z-index: 99;
+    }
+
+    .contenedor-bienvenida h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+    } */
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    /* .contenedor-bienvenida {
+        width: 70%;
+        position: absolute;
+        top: 175px;
+        padding: 30px 50px;
+        z-index: 99;
+    }
+    
+    .contenedor-bienvenida p {
+        font-size: 16px;
+        line-height: 1.15;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-bienvenida h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    } */
+   
+}
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    /* .contenedor-bienvenida {
+        width: 70%;
+        position: absolute;
+        top: 150px;
+        padding: 30px;
+        z-index: 99;
+    }
+    
+    .contenedor-bienvenida p {
+        font-size: 14px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-bienvenida h1 {
+        font-size: 27.5px;
+        margin-bottom: 15px;
+    } */
+    
 }
